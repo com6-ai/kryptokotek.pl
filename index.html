@@ -411,7 +411,7 @@
                 data.news.slice(1).forEach((item) => {
                     const div = document.createElement('div');
                     div.className = 'news-item';
-                    div.innerText = item.text;
+                    div.innerHTML = item.text;
                     newsList.appendChild(div);
                 });
             } else { newsList.innerHTML = '<div class="news-item">Brak aktualności.</div>'; }
